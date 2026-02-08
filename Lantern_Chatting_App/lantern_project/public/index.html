@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+    <title>Lantern | Chat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="loginScreen">
+      <div id="loginBox">
+        <h1>Lantern</h1>
+        <p>Sign in to start messaging</p>
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Your name"
+          autocomplete="off"
+        >
+        <button id="loginBtn">Join Room</button>
+      </div>
+    </div>
+
+    <div id="chatApp" hidden>
+      <div id="sidebar">
+        <div id="sidebarHeader">
+          <span>Online Users</span>
+          <button id="closeMenu">&times;</button>
+        </div>
+        <ul id="userList"></ul>
+      </div>
+
+      <div id="chatArea">
+        <div id="chatHeader">
+          <button id="menuToggle">☰</button>
+          <span id="chatTargetName">Select a user</span>
+        </div>
+
+        <div id="messages"></div>
+
+        <div id="inputBox">
+          <input
+            type="text"
+            id="msgInput"
+            placeholder="Message..."
+            autocomplete="off"
+          >
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
